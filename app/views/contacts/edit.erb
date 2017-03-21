@@ -1,0 +1,13 @@
+<h2 id="page-header"> Edit Contact </h2>
+
+<form id="contacts" action='/contacts/<%=@contact.id%>' method="POST">
+	<input type="hidden" name ="_method" value ="put">
+	<input type="text" required  name="contact[first_name]" value="<%= @contact.first_name%>">
+	<br>
+	<input type="text" required  name="contact[last_name]" value="<%= @contact.last_name%>">
+	<br>
+	<input type="text" required  name="contact[phone_number]" value="<%= @contact.phone_number%>">
+	<br>
+	<input type="submit" value="Save Contact">
+	<br>
+</form>
