@@ -14,6 +14,8 @@ gem 'activerecord', "~>4.2"
 gem 'rake'
 gem 'bcrypt-ruby'
 
+gem 'twilio-ruby', '~> 4.11.1'
+
 gem 'shotgun'
 gem 'hirb'
 group :development, :test do

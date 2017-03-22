@@ -21,7 +21,7 @@ end
 get '/users/:id' do
 	p "*" * 80
 	p params
-	@user = User.find(params[:id])
+	@user = current_user
 	if logged_in? && current_user.id == @user.id
 		erb :'users/show'
 	else 

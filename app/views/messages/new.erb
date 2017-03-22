@@ -1,0 +1,18 @@
+<%if current_user %>
+<h2>Select Contacts</h2>
+<form action="/messages" method="post">
+	<% @user.contacts.each do |contact| %>
+	  <input type="checkbox"> <%= contact.first_name + " " +  contact.last_name + "" + "" + "+1" +contact.phone_number%> <br>
+	<% end %>
+<div align="center">
+<textarea></textarea>
+<input type="submit" value="Send Message">
+</form>
+</div>
+<br>
+<br>
+<br>
+<a href="/users/<%=current_user.id%>"> My profile</a>
+<%end%>
+
+

@@ -1,6 +1,14 @@
+<%if current_user %>
 <center><h1>Welcome Back, <%= @user.username %></h1></center>
 
+<div align="left">
 <a href="/contacts/new"> + Create New Contact</a>
+</div>
+
+<div align="right">
+  <a href="/messages/new"> + Send New Message</a>
+</div>
+
 
 
 <br>
@@ -26,5 +34,5 @@
 
 <a href="/logout">Logout</a>
 
-
+<%end%>
  
