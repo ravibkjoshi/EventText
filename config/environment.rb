@@ -10,7 +10,8 @@ require 'rubygems'
 
 require 'uri'
 require 'pathname'
-
+require 'dotenv'
+Dotenv.load
 require 'pg'
 require 'bcrypt'
 require 'active_record'

@@ -3,14 +3,18 @@
 <head>
   <link rel="stylesheet" href="/css/normalize.css?app=skills">
   <link rel="stylesheet" href="/css/application.css?app=skills">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
   <script src="/js/application.js?app=skills"></script>
 
-  <title></title>
+  <title>Ravi's Sweet Site</title>
 </head>
 <body>
+  <%= erb :'_errors' %>
   <%= yield %>
-  <%= erb :'_errors' %>'
 </body>
 </html>

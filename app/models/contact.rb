@@ -4,7 +4,7 @@ class Contact < ActiveRecord::Base
 	has_many :users, through: :relationships 
   # Remember to create a migration!
 
-  def internationalized_phone_number
+  def internationalized_phone_number(phone_number)
   	"+1#{phone_number}"
   end
 end

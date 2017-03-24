@@ -1,4 +1,7 @@
-.error-text{
-color: red;
+.error-text {
+	color: red;
+}
 
+body {
+	padding: 10px;
 }

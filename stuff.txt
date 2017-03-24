@@ -1,0 +1,2 @@
+<input type="checkbox" id="test7" name='numbers[<%contact.phone_number%>]' value='<%=contact.phone_number %>'/>
+      <label for="test7">1 <%=contact.phone_number%></label><br>
