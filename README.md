@@ -1,3 +1,3 @@
-## My Crud App
+EventText Web Application
 
 

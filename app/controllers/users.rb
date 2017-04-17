@@ -5,11 +5,13 @@ get '/users/new' do
 end  
 
 post '/users' do 
-	user = User.create(params[:user])
-	if user.valid?
-		redirect '/'
+	user = User.new(params[:user])
+	user.id 
+	if user.save
+		login(user)
+		redirect "/users/#{user.id}"
 	else 
-		@errors = ["Invalid Email or Password"]
+		@errors = user.errors.full_messages
 		erb :'users/new'
 	end
 end 
@@ -17,9 +19,11 @@ end
 
 
 get '/users/:id' do
-	if current_user
-		@user = User.find(params[:id])
-		erb :'users/profile'
+	p "*" * 80
+	p params
+	@user = current_user
+	if logged_in? && current_user.id == @user.id
+		erb :'users/show'
 	else 
 		redirect '/'
 	end

@@ -1,75 +1,61 @@
-.container {
-  margin: 20px auto;
-  width: 800px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+.error-text {
+	color: red;
 }
 
-.container h1 {
-  font-size: 17pt;
-
+body {
+	padding: 30px;
+  background-color: #F5FDC6;
 }
 
-nav {
-  width: 100%;
-  height: 40px;
-  font-weight: bold;
+
+
+.button {
+  background:none!important;
+  border:none; 
+  padding:0!important;
+
+  /*optional*/
+  font-family:arial,sans-serif; /*input has OS specific font-family*/
+  color:#039be5;
+
+  cursor:pointer;
+
+}
+.h{
+color:#20596d;
+
+  
 }
 
-nav .brand, nav .brand a {
-  margin-left: 25px;
-  font-size: 18pt;
-  text-decoration: none;
-  color: #444;
-  width: 60%;
-  display: inline-block;
+.profile-link{
+  display: block;
+  clear: all;
+  float: right;
 }
-
-nav ul {
-  display: inline-block;
-  width: 30%;
-  text-align: right;
-}
-
-nav li {
-  margin-right: 25px;
-  display: inline;
-}
-
-nav li a {
-  color: gray;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  text-decoration: underline;
-}
-
-form label {
-  font-weight: bold;
-  margin-right: 20px;
-}
-
-input {
-  margin-bottom: 10px;
-}
-
-.errors {
-  color: red;
-}
-
-form.quirks {
-  display: inline-block;
-}
-
-.submit {
-  text-align: center;
-}
-
-.label {
-  font-weight: bold;
+.new-contact-link{
   float: left;
-  text-align: right;
-  margin-right: 20px;
-  width: 200px;
+}
+.new-message-link{
+float: right;
+}
+
+.messageplace{
+  color:#039be5; 
+
+}
+.contact-text{
+  color:#039be5;
+}
+.contact-container{
+   float: left;
+}
+.contact-name{
+color:#20596d;
+
+}
+.sms{
+ 
+  vertical-align: top;
+ float: right;
+
 }

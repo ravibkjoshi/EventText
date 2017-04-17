@@ -5,18 +5,14 @@ helpers do
 	end 
 
 	def logout
-		session.delete(:user_id)
+		session[:user_id] = nil
 	end 
 
 	def current_user
-		if session[:user_id]
-			User.find(session[:user_id])
-		else 
-			nil
-		end 
+		@current_user ||= User.find(session[:user_id]) if session[:user_id]
 	end 
 
 	def logged_in?
-		current_user
+		!!current_user
 	end 
 end 

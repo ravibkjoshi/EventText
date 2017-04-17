@@ -1,8 +1,10 @@
 class User < ActiveRecord::Base
 include BCrypt
 
-validates :email, :password, presence: true
-validates :email, uniqueness: true 
+validates :email, :password, :username, presence: true
+validates :email, :username, uniqueness: true 
+has_many :relationships
+has_many :contacts, through: :relationships
 
   def password
     @password ||= Password.new(hashed_password)
@@ -13,8 +15,8 @@ validates :email, uniqueness: true
     self.hashed_password = @password
   end 
 
-  def authenticate(valid_password)
-  	self.password == valid_password
+  def authenticate(password_attempt)
+  	self.password == password_attempt
   end 
   # Remember to create a migration!
 end

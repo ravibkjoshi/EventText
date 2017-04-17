@@ -1,0 +1,37 @@
+<%if current_user %>
+<center><h1>Welcome Back, <%= @user.username %></h1></center>
+
+<div align="left">
+<a class="new-contact-link" href="/contacts/new"> + Create New Contact</a>
+</div>
+<div align="right">
+  <a class="new-message-link" href="/messages/new"> + Send New Message</a>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<ul>
+ <h1> My Contacts:</h1>
+		<% @user.contacts.each do |contact| %>
+		<li><h3> <%= contact.first_name + " " +  contact.last_name%> </h3>
+		  <a href="/contacts/<%=contact.id%>/edit">edit</a>
+		  <form method="post" action="/contacts/<%= contact.id %>">
+			<input type="hidden" name="_method" value="delete"/>
+				<input class ="button" type="submit" value="delete"/>
+
+			</form>
+		</li>
+
+		<% end %>
+	</ul>
+<br>
+<br>
+<br>
+
+<a href="/logout">Logout</a>
+
+<%end%>
+ 
