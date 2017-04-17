@@ -1,13 +1,14 @@
-<center> <h1>Add a contact</h1> <center>
+<center> <h1 class="h" >Add a contact</h1> <center>
+<a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a>
 <div class ="container" >
 <form id="contact" method = "post" action="/contacts/new" >
 First Name:<input type="text" name="contact[first_name]" placeholder= "John" />
 	<br>
-Last Name: <input type="text" name="contact[last_name]" placeholder= "Smith" />
+Last Name: <input  type="text" name="contact[last_name]" placeholder= "Smith" />
 <br>
 Phone Number: <input type="text" name="contact[phone_number]" placeholder=" 5551236789" />
 <br>
-<input type ='submit' value ="Create Contact" >
+<input class ="button" type ='submit' value ="Create Contact" >
 <br>
 </form>
 </div>

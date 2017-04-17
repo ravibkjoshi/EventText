@@ -2,11 +2,10 @@
 <center><h1>Welcome Back, <%= @user.username %></h1></center>
 
 <div align="left">
-<a href="/contacts/new"> + Create New Contact</a>
+<a class="new-contact-link" href="/contacts/new"> + Create New Contact</a>
 </div>
-
 <div align="right">
-  <a href="/messages/new"> + Send New Message</a>
+  <a class="new-message-link" href="/messages/new"> + Send New Message</a>
 </div>
 
 
@@ -15,13 +14,13 @@
 <br>
 <br>
 <ul>
- <h2> My Contacts:</h2>
+ <h1> My Contacts:</h1>
 		<% @user.contacts.each do |contact| %>
-		<li><p> <%= contact.first_name + " " +  contact.last_name%> </p>
+		<li><h3> <%= contact.first_name + " " +  contact.last_name%> </h3>
 		  <a href="/contacts/<%=contact.id%>/edit">edit</a>
 		  <form method="post" action="/contacts/<%= contact.id %>">
 			<input type="hidden" name="_method" value="delete"/>
-				<input type="submit" value="delete"/>
+				<input class ="button" type="submit" value="delete"/>
 
 			</form>
 		</li>

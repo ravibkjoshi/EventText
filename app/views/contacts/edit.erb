@@ -1,4 +1,5 @@
-<h2 id="page-header"> Edit Contact </h2>
+<h2 class="h" id="page-header"> Edit Contact </h2>
+<a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a>
 
 <form id="contacts" action='/contacts/<%=@contact.id%>' method="POST">
 	<input type="hidden" name ="_method" value ="put">
@@ -8,6 +9,6 @@
 	<br>
 	<input type="text" required  name="contact[phone_number]" value="<%= @contact.phone_number%>">
 	<br>
-	<input type="submit" value="Save Contact">
+	<input class="button" type="submit" value="Save Contact">
 	<br>
 </form>
