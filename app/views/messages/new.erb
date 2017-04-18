@@ -1,6 +1,6 @@
 <%if current_user %>
 <h2 class="h" >Select Contacts</h2>
-<a class="profile-link" href="/users/<%=current_user.id%>"> My profile</a>
+
 <form name="contacts" action="/messages" method="post">
   <div class="contact-container">
     <% @user.contacts.each do |contact| %>

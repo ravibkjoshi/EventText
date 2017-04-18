@@ -1,12 +1,17 @@
 <center> <h1 class="h" >Add a contact</h1> <center>
-<a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a>
+
 <div class ="container" >
 <form id="contact" method = "post" action="/contacts/new" >
+<i class="material-icons prefix">account_circle</i>
 First Name:<input type="text" name="contact[first_name]" placeholder= "John" />
 	<br>
+  <i class="material-icons prefix">account_circle</i>
 Last Name: <input  type="text" name="contact[last_name]" placeholder= "Smith" />
 <br>
-Phone Number: <input type="text" name="contact[phone_number]" placeholder=" 5551236789" />
+<div>
+<i class="material-icons">phone</i>
+ Phone Number: <input type="text" name="contact[phone_number]" placeholder=" 5551236789" />
+</div>
 <br>
 <input class ="button" type ='submit' value ="Create Contact" >
 <br>
