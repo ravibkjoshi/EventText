@@ -1,11 +1,11 @@
 <div class="container">
  <center> <h1>EventText</h1> </center>
 <% if logged_in? %>
-  <a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a>
 
-  <%else%>
 
 <ul>
+  <li> <a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a> </li>
+  <%else%>
     <li> <a href="/users/new">Sign Up</a> </li>
     <li> <a href='/login' >Login</a> </li>
   </ul>

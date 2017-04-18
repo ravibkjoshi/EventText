@@ -19,7 +19,7 @@ post '/messages' do
 
 	@selected_contacts.each do |contact|  
 	  @client.messages.create(
-	  from: 'xxx-xxx-xxx ',
+	  from: '+1xxxxxxxxxx ',
 	   to: internationalized_phone_number(contact),
 	  body: "#{params[:message]} From: EventText Client"
 )	end

@@ -10,11 +10,57 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
   <script src="/js/application.js?app=skills"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
   <title>EventText</title>
 </head>
 <body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">EventText</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <% if logged_in? %>
+        <li> <a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a> </li>
+        <li> <a class="new-contact-link" href="/contacts/new">Create New Contact</a> </li>
+        <li> <a class="new-message-link" href="/messages/new">Send New Message</a> </li>
+        <li> <a href="/logout">Logout</a> </li>
+        <%else%>
+        <li> <a href="/users/new">Sign Up</a> </li>
+        <li> <a href='/login' >Login</a> </li>
+          <%end%>
+      </ul>
+    </div>
+  </nav>
+
   <%= erb :'_errors' %>
   <%= yield %>
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">EventText</h5>
+                <p class="grey-text text-lighten-4">A Web Application that is available  for public use for SMS Messaging through an API Request.  </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Purchase Phone Number Access</h5>
+                <h6 class="white-text"> Please Note you will have to provide your own phone number which can be purchased in the link provided below. </h6>
+
+                <ul>
+                 
+                  <li><a class="grey-text text-lighten-3" href="https://www.twilio.com/sms/pricing"> Click Here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright 
+          
+            </div>
+          </div>
+        </footer>
+            
 </body>
 </html>
