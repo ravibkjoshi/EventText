@@ -75,7 +75,14 @@ a:hover{
 .card-small {
      height:200px;
     }
+#sent{
+   height:100px;
+}
+#tech{
+  height:300px;
+  width: 700px;
 
+}
 
 .card.horizontal {
   display: -webkit-flex;
