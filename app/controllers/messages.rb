@@ -8,7 +8,7 @@ post '/messages' do
   @user = current_user
   @selected_contacts = params[:numbers]
 
-  
+  p "*" * 80
   p @selected_contacts.class
   p params
   @client = Twilio::REST::Client.new ENV['account_sid'], ENV['auth_token']
@@ -19,10 +19,10 @@ post '/messages' do
 
 	@selected_contacts.each do |contact|  
 	  @client.messages.create(
-	  from: 'xxxxxxxxxxxx ',
+	  from: '+14083354139 ',
 	   to: internationalized_phone_number(contact),
-	  body: "#{params[:message]} From: EventText Client"
+	  body: "#{params[:message]} From: Ravi Joshi"
 )	end
-
+    erb :'messages/show'
 end
 

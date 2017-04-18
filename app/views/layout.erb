@@ -16,6 +16,10 @@
   <title>EventText</title>
 </head>
 <body>
+<video poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC" id="bgvid" playsinline autoplay muted loop>
+<source src="http://thenewcode.com/assets/videos/atlantic-light.mp4">
+</video>
+
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo">EventText</a>
@@ -35,8 +39,33 @@
 
   <%= erb :'_errors' %>
   <%= yield %>
+    <br>
+       <footer class="page-footer">
+  <d<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">EventText</h5>
+        <p class="grey-text text-lighten-4">A Sinatra based web application to SMS any phone number in the USA via an API Request. Please note a purchased phone number will be required to use this application through the link on the right.</p>
 
-       
+      </div>
+      <div class="col l3 s12">
+        <h5> <a href="https://github.com/ravibkjoshi/EventText" class="white-text"> Documentation <i class="material-icons">code</i> </h5> </a>
+
+      </div>
+      <div class="col l3 s12">
+        <h5> <a href="https://www.twilio.com/phone-numbers" class="white-text">  Phone Number </h5> </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Made by Ravi Joshi at Dev Bootcamp
+    </div>
+  </div>
+</footer>
+
+
             
 </body>
 </html>

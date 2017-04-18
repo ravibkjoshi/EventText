@@ -1,16 +1,20 @@
+
 <div class="container">
- <center> <h1>EventText</h1> </center>
-<% if logged_in? %>
+ <center> <h1 class ="uniform-color" >EventText</h1> </center>
+  <center><h5 class ="uniform-color"> Technologies Used</h5></center>
+<div class="card blue-grey darken-1">
+ <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://remotebase.io/images/tech/sinatra.png"></a>
+    <a class="carousel-item" href="#two!"><img src="https://static1.squarespace.com/static/571a021020c64744b886f00f/5720b9b001dbaeb824e45824/5723687540261dcef4d54433/1463258278501/html5-css3-js_logo250.png"></a>
+    <a class="carousel-item" href="#three!"><img src="https://flowgear-wpengine.netdna-ssl.com/wp-content/uploads/2014/08/connector-icon-postgresql.png"></a>
+    <a class="carousel-item" href="#four!"><img src="http://webbridgellc.com/wp-content/uploads/2016/08/ruby-1.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lh5.googleusercontent.com/-XllynzT5CxY/AAAAAAAAAAI/AAAAAAAAAA0/g6rDnAlcvk0/photo.jpg"></a>
+  </div>
+      
 
 
-<ul>
-  <li> <a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a> </li>
-  <%else%>
-    <li> <a href="/users/new">Sign Up</a> </li>
-    <li> <a href='/login' >Login</a> </li>
-  </ul>
-
-    <%end%>
 
 
+
+</div>
 </div>
