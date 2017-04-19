@@ -72,6 +72,12 @@ a:hover{
   html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
+
+#login{
+width: 500px;
+margin: auto;
+
+}
 .card-small {
      height:200px;
     }

@@ -17,21 +17,21 @@
 </head>
 <body>
 <video poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC" id="bgvid" playsinline autoplay muted loop>
-<source src="http://thenewcode.com/assets/videos/atlantic-light.mp4">
+<source src="https://redirector.googlevideo.com/videoplayback?mime=video%2Fmp4&signature=57E85C542C00C9D5B99AEDD6AD51EBEB09531E78.B0E9BB664CA61D17F1FE4A3B8871E882D2050721&upn=lqA8HEgXyxs&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&key=yt6&ip=78.157.200.133&lmt=1472334714838950&dur=8.544&itag=22&id=o-AG8bQBo6cuWQs8xPEPvXsi9zIvsDIrAZk-sqJTSZbynA&requiressl=yes&mn=sn-aigllnly&mm=31&ipbits=0&mv=m&mt=1492566563&ms=au&ei=c8L2WJilDM2JoAOfjZKQCg&expire=1492588243&initcwndbps=2738750&pl=19&source=youtube&ratebypass=yes">
 </video>
 
   <nav>
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo">EventText</a>
+    <div class="nav-wrapper white">
+      <a href="/" class="brand-logo black-text">EventText</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
       <% if logged_in? %>
-        <li> <a class="profile-link" href="/users/<%=current_user.id%>"> My Profile</a> </li>
-        <li> <a class="new-contact-link" href="/contacts/new">Create New Contact</a> </li>
-        <li> <a class="new-message-link" href="/messages/new">Send New Message</a> </li>
-        <li> <a href="/logout">Logout</a> </li>
+        <li> <a class="profile-link black-text"  href="/users/<%=current_user.id%>"> My Profile</a> </li>
+        <li> <a class="new-contact-link black-text" href="/contacts/new">Create New Contact</a> </li>
+        <li> <a class="new-message-link black-text" href="/messages/new">Send New Message</a> </li>
+        <li> <a class="black-text"  href="/logout">Logout</a> </li>
         <%else%>
-        <li> <a href="/users/new">Sign Up</a> </li>
-        <li> <a href='/login' >Login</a> </li>
+        <li> <a class="black-text" href="/users/new">Sign Up</a> </li>
+        <li> <a class="black-text" href='/login' >Login</a> </li>
           <%end%>
       </ul>
     </div>
@@ -40,26 +40,28 @@
   <%= erb :'_errors' %>
   <%= yield %>
     <br>
-       <footer class="page-footer">
-  <d<footer class="page-footer">
+       <footer class="page-footer white">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">EventText</h5>
-        <p class="grey-text text-lighten-4">A Sinatra based web application to SMS any phone number in the USA via an API Request. Please note a purchased phone number will be required to use this application through the link on the right.</p>
+      <div class="col l3 s12">
+        <h5 class="grey-text">About</h5>
+        <p class="grey-text">A Sinatra based web application to SMS any phone number in the USA via an API Request. Please note a purchased phone number will be required to use this application through the link on the right.</p>
 
       </div>
       <div class="col l3 s12">
-        <h5> <a href="https://github.com/ravibkjoshi/EventText" class="white-text"> Documentation <i class="material-icons">code</i> </h5> </a>
+        <h5> <a href="https://github.com/ravibkjoshi/EventText" class="grey-text"> Documentation <i class="material-icons">code</i> </h5> </a><p class="white-text"> A link to the Source Code and an explanation of how it works and how it can be adapted and implemented further. All code is available for public source use and can be used towards an open source project. </p>
 
       </div>
       <div class="col l3 s12">
-        <h5> <a href="https://www.twilio.com/phone-numbers" class="white-text">  Phone Number </h5> </a>
+        <h5> <a href="/tech" class="grey-text"> Technologies<i class="material-icons">code</i> </h5> </a>
+      </div>
+      <div class="col l3 s12">
+        <h5> <a href="https://www.twilio.com/phone-numbers" class="grey-text">  Phone Number </h5> </a>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
-    <div class="container">
+    <div class="container grey-text">
       Made by Ravi Joshi at Dev Bootcamp
     </div>
   </div>
