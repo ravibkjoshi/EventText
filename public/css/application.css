@@ -96,11 +96,15 @@ margin: auto;
   width: 700px;
 
 }
+#contacts{
+margin: auto;
+}
 
 .card.horizontal {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
 }
 #uniform-color{
 color:#20596d;
@@ -111,6 +115,10 @@ color:#20596d;
 }
 .error-text {
 	color: red;
+}
+#footerfix{
+ height:280px;
+
 }
 
 body {
