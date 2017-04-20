@@ -19,9 +19,9 @@ post '/messages' do
 
 	@selected_contacts.each do |contact|  
 	  @client.messages.create(
-	  from: '+xxxxxxxxx ',
+	  from: '+14083354139 ',
 	   to: internationalized_phone_number(contact),
-	  body: "#{params[:message]} From: Ravi Joshi"
+	  body: "#{params[:message]} From: EventText Client"
 )	end
     erb :'messages/show'
 end
