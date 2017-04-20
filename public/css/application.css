@@ -73,6 +73,13 @@ a:hover{
   #bgvid { display: none; }
 }
 
+#contact-form{
+  height:350px;
+  width: 650px;
+  margin: auto;
+
+}
+
 #login{
 width: 500px;
 margin: auto;
@@ -110,8 +117,17 @@ body {
 	padding: 30px;
   background-color: #ffffff;
 }
+#profile{
+ height:300px;
+  width: 1050px;
+  margin: auto;
 
+}
 
+#edit{
+color:#a4a8aa;
+
+}
 
 .button {
   background:none!important;
@@ -120,7 +136,7 @@ body {
 
   /*optional*/
   font-family:arial,sans-serif; /*input has OS specific font-family*/
-  color:#039be5;
+  color:#a4a8aa;
 
   cursor:pointer;
 

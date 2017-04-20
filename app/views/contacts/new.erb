@@ -1,20 +1,18 @@
-<div class="card white">
-<center> <h1 class="uniform-color" >Add a contact</h1> <center>
-<div class ="container" >
-<form id="contact" method = "post" action="/contacts/new" >
-<i class="material-icons prefix">account_circle</i>
-First Name:<input type="text" name="contact[first_name]" placeholder= "John" />
-	<br>
-  <i class="material-icons prefix">account_circle</i>
-Last Name: <input  type="text" name="contact[last_name]" placeholder= "Smith" />
-<br>
-<div>
-<i class="material-icons">phone</i>
- Phone Number: <input type="text" name="contact[phone_number]" placeholder=" 5551236789" />
-</div>
-<br>
-<input class ="button" type ='submit' value ="Create Contact" >
-<br>
-</form>
-</div>
-</div>
+<div id="contact-form" class="card white">
+<center> <h5 class="black-text" >Add New Contact</h5> <center>
+    <div class ="container" >
+      <form id="contact" method = "post" action="/contacts/new" >
+        <i class="material-icons prefix">account_circle</i>
+        First Name:<input type="text" name="contact[first_name]" placeholder= "John" />
+        <br>
+        <i class="material-icons prefix">account_circle</i>
+        Last Name: <input  type="text" name="contact[last_name]" placeholder= "Smith" />
+        <br>
+        <div>
+          <i class="material-icons">phone</i>
+          Phone Number: <input type="text" name="contact[phone_number]" placeholder=" 5551236789" />
+        </div>
+        <input class ="button" type ='submit' value ="Create Contact" >
+      </form>
+    </div>
+  </div>
