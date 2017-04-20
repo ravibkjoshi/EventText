@@ -99,6 +99,11 @@ margin: auto;
 #contacts{
 margin: auto;
 }
+#made{
+ position: absolute;
+    left: 100px;
+
+}
 
 .card.horizontal {
   display: -webkit-flex;
