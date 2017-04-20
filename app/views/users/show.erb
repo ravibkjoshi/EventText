@@ -1,6 +1,6 @@
 <%if current_user %>
- 	<div class="card large">
-<center><h1 class ="uniform-color" >Welcome Back, <%= @user.username %>!</h1></center>
+ 	<div id="profile" class="card medium">
+<center><h4 class ="black-text" >Welcome Back, <%= @user.username %>!</h4></center>
 
 <div align="left">
 
@@ -16,13 +16,13 @@
 <br>
 <ul >
 
- 	<h1 class ="uniform-color"> My Contacts:</h1>
+ 	<h5 class ="black-text"> My Contacts:</h5>
 		<% @user.contacts.each do |contact| %>
 		<div class="row" >
   <div class="col s6">
     <div class="card horizontal" >
-    <h4 class="header"><%= contact.first_name + " " +  contact.last_name%></h4>
-      <a href="/contacts/<%=contact.id%>/edit">edit</a>
+    <h6 class="header"><%= contact.first_name + " " +  contact.last_name%></h6>
+      <a id="edit" href="/contacts/<%=contact.id%>/edit">edit</a>
       <i class="material-icons">mode_edit</i>
       <form method="post" action="/contacts/<%= contact.id %>">
         <input type="hidden" name="_method" value="delete" />

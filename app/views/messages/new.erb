@@ -1,14 +1,14 @@
 <%if current_user %>
 <div class="card hoverable small white">
-<h2 class="uniform-color" >Select Contacts</h2>
-<a class="profile-link" href="/users/<%=current_user.id%>"> My profile</a>
+<h5 class="black-text" >Select Contacts</h5>
+<!-- <a class="profile-link" href="/users/<%=current_user.id%>"> My profile</a> -->
 <form name="contacts" action="/messages" method="post">
   <div class="contact-container">
     <% @user.contacts.each do |contact| %>
     <!--      <input name='numbers[<%contact.phone_number%>]' value='<%=contact.phone_number %>' type="checkbox"> <%= contact.first_name + " " +  contact.last_name + "" + "" + "+1" +contact.phone_number%> <br> -->
     <p>
       <input type="checkbox" id="test<%= contact.id %>" name='numbers[<%contact.phone_number%>]' value='<%=contact.phone_number %>'/>
-      <label class="contact-name" for="test<%= contact.id %>"> <%= contact.first_name%> <%=contact.last_name%></label>
+      <label class="contact-name black-text" for="test<%= contact.id %>"> <%= contact.first_name%> <%=contact.last_name%></label>
     </p>
     <p>
     </p>
