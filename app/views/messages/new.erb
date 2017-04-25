@@ -2,7 +2,7 @@
 <div class="card hoverable small white">
 <h5 class="black-text" >Select Contacts</h5>
 <!-- <a class="profile-link" href="/users/<%=current_user.id%>"> My profile</a> -->
-<form name="contacts" action="/messages" method="post">
+<form name="contacts"  action="/messages" method="post">
   <div class="contact-container">
     <% @user.contacts.each do |contact| %>
     <!--      <input name='numbers[<%contact.phone_number%>]' value='<%=contact.phone_number %>' type="checkbox"> <%= contact.first_name + " " +  contact.last_name + "" + "" + "+1" +contact.phone_number%> <br> -->
