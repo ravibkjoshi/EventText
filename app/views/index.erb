@@ -2,9 +2,21 @@
 
 <center>
 <div  id ="tech">
+<% if current_user %>
+
+
+<center>
+ <p class="animation-position" id="typeanimation">Send a new message by clicking on the tab above! </p> </center>
+ 
+
+   </div>
+</center>
+ <% else %>
 <center>
  <p class="animation-position" id="typeanimation">Text your friends about events! Sign up Now!</p> </center>
  
 
    </div>
 </center>
+
+<%end%>
