@@ -186,7 +186,10 @@ float: right;
   color:#039be5;
 }
 .contact-container{
-   float: left;
+   position:absolute;
+    top:20px;
+    right:50%; /* Positions 50% from right (right edge will be at center) */
+    margin-right:200px;
 }
 .contact-name{
 color:#20596d;
