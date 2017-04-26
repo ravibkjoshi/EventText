@@ -191,6 +191,7 @@ float: right;
     right:50%; /* Positions 50% from right (right edge will be at center) */
     margin-right:200px;
 }
+
 .contact-name{
 color:#20596d;
 
@@ -201,7 +202,9 @@ color:#20596d;
  float: right;
 
 }
-
+#contacts-list{
+background-color: transparent;
+}
 
 
 

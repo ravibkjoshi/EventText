@@ -1,6 +1,6 @@
 <%if current_user %>
-<div class="card hoverable small white">
-<h5 class="black-text" >Select Contacts</h5>
+<div id="contacts-list" class="card hoverable small ">
+<h5 class="white-text" >Select Contacts</h5>
 <!-- <a class="profile-link" href="/users/<%=current_user.id%>"> My profile</a> -->
 <form name="contacts"  action="/messages" method="post">
   <div class="contact-container">
@@ -15,11 +15,11 @@
     
     <% end %>
   </div>
-  <div align="right">
+  <div id="messagebox">
     <label class="messageplace"></label>
     <br>
     <div class="sms">
-      <textarea name="message" rows="20" cols="50" placeholder="Your Text Goes Here"> </textarea>
+      <textarea class="white-text" name="message" rows="20" cols="50" placeholder="Your Text Goes Here"> </textarea>
       <br>
       <input type="submit" value="Send Message" class="button">
     </div>
