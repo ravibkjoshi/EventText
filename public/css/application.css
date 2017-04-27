@@ -189,7 +189,7 @@ float: right;
    position:absolute;
     top:20px;
     right:50%; /* Positions 50% from right (right edge will be at center) */
-    margin-right:200px;
+    margin-right:300px;
 }
 
 .contact-name{
