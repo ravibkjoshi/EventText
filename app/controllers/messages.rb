@@ -8,9 +8,7 @@ post '/messages' do
   @user = current_user
   @selected_contacts = params[:numbers]
 
-  p "*" * 80
-  p @selected_contacts.class
-  p params
+  
   @client = Twilio::REST::Client.new ENV['account_sid'], ENV['auth_token']
 
   # @contacts.each do |contact|
