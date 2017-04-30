@@ -1,17 +1,17 @@
 
-<div  id="contact-form" class="card white" >
+<div  id="contact-form" class="card transparent" >
   <center>
-    <h5 class ="black-text" id="page-header"> Edit Contact </h5> <center>
+    <h5 class ="white-text" id="page-header"> Edit Contact </h5> <center>
     <form id="contacts" action='/contacts/<%=@contact.id%>' method="POST">
      <input type="hidden" name ="_method" value ="put">
      <i class="material-icons prefix">account_circle</i>
-     First Name: <input type="text" required  name="contact[first_name]" value="<%= @contact.first_name%>">
+     First Name: <input class ="white-text" type="text" required  name="contact[first_name]" value="<%= @contact.first_name%>">
      <br>
      <i class="material-icons prefix">account_circle</i>
-     Last Name: <input type="text" required  name="contact[last_name]" value="<%= @contact.last_name%>">
+     Last Name: <input class ="white-text" type="text" required  name="contact[last_name]" value="<%= @contact.last_name%>">
      <br>
      <i class="material-icons">phone</i>
-     Phone Number: <input type="text" required  name="contact[phone_number]" value="<%= @contact.phone_number%>">
+     Phone Number: <input class ="white-text" type="text" required  name="contact[phone_number]" value="<%= @contact.phone_number%>">
      <input class="button" type="submit" value="Save Contact">
    </form>
  </div>
