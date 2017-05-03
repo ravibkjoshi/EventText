@@ -94,6 +94,3 @@ DEPENDENCIES
   sinatra-contrib
   thin
   twilio-ruby (~> 4.11.1)
-
-BUNDLED WITH
-   1.14.3
