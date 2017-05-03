@@ -7,4 +7,10 @@ EventText Web Application
 
  ![Alt Text](https://github.com/ravibkjoshi/EventText/blob/master/public/contact.gif)
 
+ <h2> Send a Mass Text Message</h2>
+
+
+
+
+
 
