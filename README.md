@@ -1,6 +1,5 @@
-EventText Web Application
+<h1>EventText</h1>
 
-<p align="center">
 <h2> Signup</h2>
 
  ![Alt Text](https://github.com/ravibkjoshi/EventText/blob/master/public/signup.gif)
@@ -12,8 +11,6 @@ EventText Web Application
  <h2> Send a Mass Text Message</h2>
 
  ![Alt Text](https://github.com/ravibkjoshi/EventText/blob/master/public/message.gif)
-
- </p>
 
 
 
